@@ -1,0 +1,21 @@
+Step 1. Segment arteries and veins from the test image - 
+
+For this run the build_predictions file present in HR_GUI folder. The images to be segmented has to be put in the retinal_images folder present in the HR_GUI folder. The resuls will be stored in the uncertaininty folder present in results folder which is present in HR_GUI folder. Results will be of same filename as that of test images but will have png extension. 
+
+Step 2. ROI detection - 
+
+For this run the roicode file present in HR_GUI folder. In this file give the path of image to be segmented. Save the results(.jpg format) in the mask folder present in HR_GUI folder. 
+
+NOTE: filename of original, segmented and mask image should be same. Format of original and mask image is .jpg and format of segmented image is .png.
+
+Step 3. Now run the GUI - 
+
+For this goto to anaconda prompt and go to the location where manage.py file is there. Then type the command:
+
+python manage.py runserver
+
+Now goto this URL : http://127.0.0.1:8000/home
+
+Step 4. Goto prediction tab, and browse for image to be tested that should be present in retinal_images folder. Then click SUBMIT.
+
+
